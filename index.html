@@ -48,7 +48,13 @@
             <li><a href="#">Internet Mysteries</a></li>
             <li><a href="https://LoopNova7305.github.io/AlienSightingsandCoverups.html">Alien Sightings and Coverups</a></li>
           </ul>
-     <input type="email" placeholder="Your email">
-    <button onclick="alert(\"Hello!\");document.getElementById(\"email\").value=\"\"">Submit</button>
+     <input id="email" type="email" placeholder="Your email">
+    <button id="button">Submit</button>
+    <script>
+      document.getElementById("button").onclick = function(e) {
+        alert("Hello");
+        document.getElementById("email").value = "";
+      }
+    </script>
     <body>
             <html>
